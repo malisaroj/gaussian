@@ -20,20 +20,20 @@ gaussian_one.mean
 gaussian_one + gaussian_one
 ```
 
-## uploading a package to PyPi
-# python-package
+## Uploading a package to PyPi
+# Python-package
 ```
 python setup.py sdist
 pip install twine
 ```
 
-# commands to upload to the pypi test repository
+# Commands to upload to the pypi test repository
 ```
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 pip install --index-url https://test.pypi.org/simple/ distributions
 ```
 
-# command to upload to the pypi repository
+# Command to upload to the pypi repository
 ```
 twine upload dist/*
 pip install distributions
